@@ -133,6 +133,27 @@ Replace the example commands with your own instructions. The program reads what 
 
 ---
 
+## 🌐 Search Provider Configuration
+
+code-edith-old supports two web search backends. By default it uses DuckDuckGo, but you can optionally switch to Tavily for enhanced search results.
+
+| Environment Variable | Description | Values | Default |
+|---|---|---|---|
+| `SEARCH_PROVIDER` | Which search backend to use | `ddgs` or `tavily` | `ddgs` |
+| `TAVILY_API_KEY` | API key for Tavily (required when `SEARCH_PROVIDER=tavily`) | Get one at https://app.tavily.com | — |
+
+To use Tavily, set both variables before running code-edith-old:
+
+```
+set SEARCH_PROVIDER=tavily
+set TAVILY_API_KEY=tvly-YOUR_API_KEY
+python main.py
+```
+
+If `SEARCH_PROVIDER` is not set or set to `ddgs`, the default DuckDuckGo backend is used and no API key is needed.
+
+---
+
 ## 🔧 Troubleshooting
 
 - If Python is not recognized, check that it is added to your PATH during installation.
